@@ -1,0 +1,18 @@
+.div-data{
+    padding: 3rem 4rem 0rem 6rem;
+}
+.div-data h1{
+    font-size: 2.3rem;
+    margin-bottom: 0.8rem;
+}
+.divData-last-conponent{
+    padding: 3rem 4rem 4rem 6rem;
+}
+@media screen and (max-width:850px){
+    .div-data{
+        padding: 2.5rem 2rem 0rem 2rem;
+    }
+    .divData-last-conponent{
+        padding: 2.5rem 2rem 4rem 2rem;
+    }
+}

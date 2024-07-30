@@ -1,0 +1,134 @@
+.nav-div{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    box-shadow: 0px 5px 15px 0 rgba(0, 0, 0, 0.253);
+    width: 95%;
+    height: 80px;
+    border-radius: 10px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 9999;
+}
+.ul-nav{
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+    grid-gap: 10px;
+    list-style: none;
+    align-items: center;
+}
+.humberer-icon{
+    display: none;
+}
+.navBar-items{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.7rem 1rem;
+    white-space: nowrap;
+}
+.navBar-items i{
+    padding: 10px;
+}
+.navBar-items:hover{
+    background-color: rgb(53, 150, 118);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+.navBar-items-signup{
+    display: none;
+}
+button{
+    font-size: 1rem;
+    white-space: nowrap;
+    padding: 0.7rem 1rem;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover{
+    background-color:  rgb(53, 150, 118) ;
+    color: rgb(255, 255, 255);
+    transition: all 0.2s ease-in-out;
+}
+@media screen and (max-width:850px){
+    .humberer-icon{
+        display: block;
+        font-size:1.2rem;
+        cursor: pointer;
+    }
+    .nav-div{
+        z-index: 99;
+    }
+    .ul-nav{
+        display: flex;
+        flex-direction:column ;
+        justify-content: flex-start;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        width: 100%;
+        height: auto;
+        left: -100%;
+        top: 0;
+        opacity: 0;
+        align-items: stretch;
+        padding: 80px 0 30px 0;
+        margin: 0;
+    }
+    .ul-nav-clicked{
+        display: flex;
+        flex-direction:column ;
+        justify-content: flex-start;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        width: 100%;
+        height: auto;
+        top: 0;
+        align-items: stretch;
+        padding: 80px 0 30px 0;
+        margin: 0;
+        left:0;
+        opacity: 1;
+        list-style: none;
+        z-index: -1;
+        transition: 0.3s ease;
+    }
+    .navBar-items{
+        display: block;
+        padding: 2rem 0rem;
+        width: 100%;
+    }
+    button{
+        display:none
+    }
+    .navBar-items-signup{
+        display: block;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: rgb(12, 12, 12);
+        background-color: rgb(195, 206, 206);
+        padding: 1.5rem;
+        width: 60%;
+        margin: auto;
+        border-radius: 4px;
+        letter-spacing: 2px;
+        margin-top: 1px;
+    }
+    .navBar-items-signup:hover{
+        background-color:rgb(53, 150, 118) ;
+        color: white;
+        transition: 0.3s ease-in-out;
+    }
+
+
+}

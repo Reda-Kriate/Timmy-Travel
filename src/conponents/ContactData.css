@@ -1,0 +1,73 @@
+.contact-div{
+    padding: 3rem 4rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.contact-div h1{
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+.contact-div form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.contact-div form input{
+    height: 50px;
+    width: 50%;
+    margin-bottom: 1.5rem;
+    padding: 1rem 1.5rem;
+    border-radius: 7px;
+    border: solid 1px rgb(116, 114, 114);
+}
+.contact-div form textarea{
+    width: 50%;
+    margin-bottom: 1.5rem;
+    padding: 1rem 1.5rem;
+    border-radius: 7px;
+    border: solid 1px rgb(116, 114, 114);
+}
+.contact-div form button{
+    display: block;
+    border: solid 1px rgb(148, 143, 143);
+}
+.contact-div form button:hover{
+    background-color: black;
+}
+.message-send{
+    background-color: rgba(0, 128, 0, 0.856);
+    color: white;
+    margin-top: 1rem;
+    width: 30%;
+    padding: 0.3rem;
+    transition: all 0.3s ease-in-out;
+    display: block;
+    border-radius: 3px;
+}
+.message-error{
+    background-color: rgba(170, 28, 28, 0.856);
+    color: white;
+    margin-top: 1rem;
+    width: 30%;
+    padding: 0.3rem;
+    display: block;
+}
+@media screen and (max-width:850px){
+    .contact-div{
+        padding: 3rem 1rem;
+    }
+    .contact-div form input{
+        width: 80%;
+    }
+    .contact-div form textarea{
+        width: 80%;
+    }
+    .message-send{
+        width: 50%;
+    }
+    .message-error{
+        width: 50%;
+    }
+}
